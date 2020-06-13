@@ -11,3 +11,9 @@
 - common_script 共通で使いたいスクリプトを書く
 - custom 各PCごとに設定したい項目を書く
 - outsource_library 外部から入手した設定ファイルを置く
+
+## tmux
+tmux/tmux.confへのシンボリックリンクを貼る
+
+## hyper
+hyper/hyper.jsへのシンボリックリンクを貼る
