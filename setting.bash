@@ -7,3 +7,12 @@ for obj in "${array[@]}"; do
   . $obj
 done
 
+array=($(find $CUSTOM_SCRIPT_PATH/custom -type f))
+
+for obj in "${array[@]}"; do
+  if [ $obj = "." ]; then
+    continue
+  fi
+  . $obj
+done
+
