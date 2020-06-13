@@ -10,5 +10,5 @@ function add_line {
 }
 PROMPT_COMMAND='add_line'
 
-export PS1=' \[\e[30;47m\] \t \[\e[37;46m\] \[\e[30m\] \W \[\e[36;49m\] \[\e[0m\] $(__git_ps1 "(%s)") \[\e[0m\] \$ '
+export PS1=' \[\e[30;47m\] \t \[\e[37;46m\] \[\e[30m\] dir:\W \[\e[30;42m\] branch:$(__git_ps1 "(%s)") \[\e[0m\] \$ '
 
