@@ -6,4 +6,5 @@ alias ghf="git fetch"
 alias ghs="git status"
 alias gha="git add"
 alias ghm="git commit"
+alias ghp="git push"
 
