@@ -16,6 +16,6 @@ export PS1=' \[\e[30;47m\] \t \[\e[37;46m\] \[\e[30m\] dir:\W \[\e[30;42m\] bran
 if which tmux >/dev/null 2>&1; then
     #if not inside a tmux session, and if no session is started, start a new session
     #もしtmuxの中にいないか起動していればサブシェルでアタッチ失敗したら新しいセッションを実行
-    test -z "$TMUX" && (tmux attach -t main || tmux new-session -s main)
+    test -z "$TMUX" && tmux
 fi
 
