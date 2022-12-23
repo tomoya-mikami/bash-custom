@@ -10,7 +10,7 @@ function add_line {
 }
 PROMPT_COMMAND='add_line'
 
-export PS1=' \[\e[30;47m\] \t \[\e[37;46m\] \[\e[30m\] dir:\W \[\e[30;42m\] branch:$(__git_ps1 "(%s)") \[\e[0m\] \$ '
+export PS1='╭─○ \[\e[30;47m\] \t \[\e[37;46m\] \[\e[30m\] dir:\W \[\e[30;42m\] branch:$(__git_ps1 "(%s)") \[\e[0m\] \$ \n\[\033[m\]| \n\[\033[m\]╰─○ '
 
 # tmuxがインストールされていれば実行
 if which tmux >/dev/null 2>&1; then
